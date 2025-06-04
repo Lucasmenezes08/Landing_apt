@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-white shadow-md font-sans">
+<body class="bg-gray-50 shadow-md font-sans overflow-auto">
     <header class="bg-white w-full border-b-2 border-gray-300">
         <nav class="flex justify-between items-center w-[90%] mx-auto py-12 ">
             <a href="#" class="flex items-center gap-4">
@@ -25,17 +25,42 @@
 
 
     <section class="w-full flex justify-center items-center text-white">
-        <section class="relative w-[70%] h-[80vh] bg-local bg-cover bg-center bg-[url('assets/fotos-apt/Fotoprincipal.jpeg')] mt-[3.5rem] rounded-xl">
-            <section class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-75 z-0"></section>
+        <section class="relative w-[80%] h-[80vh] bg-local bg-cover bg-center bg-[url('assets/fotos-apt/Fotoprincipal.jpeg')] mt-[3.5rem] rounded-2xl overflow-hidden">
+            <section class="absolute inset-0 bg-gradient-to-b from-transparent to-stone-900 opacity-90 z-0"></section>
 
-            <section class="absolute left-[25%] top-[75%] text-left items-center flex-col ">
+            <section class="absolute text-center top-[45%] flex items-center flex-col ">
                 <p class="text-5xl mb-3 font-extrabold tracking-normal">Seu melhor refúgio tropical.</p>
 
-                <p class="text-xl font-medium">
+                <p class="text-xl font-medium text-center w-[90%]">
                     Para aproveitar o melhor de João Pessoa, nada melhor do que um apartamento na melhor 
                     localização de Cabo Branco, a 150m da praia e no melhor apartamento da região!
                 </p>
             </section>
+        </section>
+    </section>
+
+    <section class="w-full h-screen flex justify-center items-center flex-col mt-[1rem] px-4">
+        <p class="mb-[4rem] text-4xl font-bold">Sobre o apartamento</p>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto justify-center max-w-9xl ">
+            <section class="flex flex-col items-center text-center bg-white p-10 rounded-3xl border border-gray-200 shadow-[0_8px_24px_rgba(149,157,165,0.2)]">
+                <img class="mb-2 h-12"src="./assets/fotos-apt/Address.png">
+                <p class="text-2xl font-medium mb-2">Localização Privilegiada</p>
+                <p class="text-lg font-normal">A 150m da orla, Restaurante, farmacia e mercadinho 24 horas.</p>
+            </section>
+
+            <section class="flex flex-col items-center text-center bg-white p-10 rounded-3xl border border-gray-200 shadow-[0_8px_24px_rgba(149,157,165,0.2)]">
+                <img class="mb-2 h-12"src="./assets/fotos-apt/Double Bed.png">
+                <p class="text-2xl font-medium mb-2">Temos uma suíte!</p>
+                <p class="text-lg font-normal">São 2 quartos disponiveis, sendo uma suite.</p>
+            </section>
+        
+            <section class="flex flex-col items-center text-center bg-white p-10 rounded-3xl border border-gray-200 shadow-[0_8px_24px_rgba(149,157,165,0.2)]">
+                <img class="mb-2 h-12"src="./assets/fotos-apt/sedan.png">
+                <p class="text-2xl font-medium mb-2">Garagem disponível</p>
+                <p class="text-lg font-normal">Garagem coberta para acomodar seu veículo</p>
+            </section>
+
         </section>
     </section>
     
