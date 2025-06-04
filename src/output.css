@@ -19,6 +19,7 @@
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-zinc-100: oklch(96.7% 0.001 286.375);
     --color-stone-50: oklch(98.5% 0.001 106.423);
     --color-stone-100: oklch(97% 0.001 106.424);
     --color-white: #fff;
@@ -36,6 +37,7 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-normal: 400;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
@@ -198,6 +200,9 @@
   .fixed {
     position: fixed;
   }
+  .relative {
+    position: relative;
+  }
   .m-1 {
     margin: calc(var(--spacing) * 1);
   }
@@ -224,6 +229,21 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-\[3\.5rem\] {
+    margin-top: 3.5rem;
+  }
+  .mt-\[3rem\] {
+    margin-top: 3rem;
+  }
+  .mt-\[5rem\] {
+    margin-top: 5rem;
+  }
+  .mt-\[10rem\] {
+    margin-top: 10rem;
   }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
@@ -267,6 +287,9 @@
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -276,8 +299,35 @@
   .h-\[4rem\] {
     height: 4rem;
   }
+  .h-\[5-\] {
+    height: 5-;
+  }
   .h-\[5rem\] {
     height: 5rem;
+  }
+  .h-\[30v\] {
+    height: 30v;
+  }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
+  .h-\[60vh\] {
+    height: 60vh;
+  }
+  .h-\[65vh\] {
+    height: 65vh;
+  }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
+  .h-\[80vh\] {
+    height: 80vh;
+  }
+  .h-\[82vh\] {
+    height: 82vh;
+  }
+  .h-\[vh\] {
+    height: vh;
   }
   .h-full {
     height: 100%;
@@ -363,6 +413,21 @@
   .w-\[9\%\] {
     width: 9%;
   }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[55\%\] {
+    width: 55%;
+  }
+  .w-\[60\%\] {
+    width: 60%;
+  }
+  .w-\[70\%\] {
+    width: 70%;
+  }
+  .w-\[72\%\] {
+    width: 72%;
+  }
   .w-\[80\%\] {
     width: 80%;
   }
@@ -426,11 +491,20 @@
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-\[3vw\] {
     gap: 3vw;
   }
   .gap-\[4vw\] {
     gap: 4vw;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -460,11 +534,17 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
   }
   .bg-gray-800 {
     background-color: var(--color-gray-800);
@@ -489,6 +569,66 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-zinc-100 {
+    background-color: var(--color-zinc-100);
+  }
+  .bg-\[url\(\'assets\/fotos-apt\/Fotoprincipal\.jpeg\'\)\] {
+    background-image: url('assets/fotos-apt/Fotoprincipal.jpeg');
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\.\/assets\/fotoprincipal\.jpeg\)\] {
+    background-image: url(./assets/fotoprincipal.jpeg);
+  }
+  .bg-\[url\(\.\/assets\/fotos-apt\/fotoprincipal\.jpeg\)\] {
+    background-image: url(./assets/fotos-apt/fotoprincipal.jpeg);
+  }
+  .bg-\[url\(\.\/assets\/fotos-aptfotoprincipal\.jpeg\)\] {
+    background-image: url(./assets/fotos-aptfotoprincipal.jpeg);
+  }
+  .bg-\[url\(\/\)\] {
+    background-image: url(/);
+  }
+  .bg-\[url\(\/assets\)\] {
+    background-image: url(/assets);
+  }
+  .bg-\[url\(\/assets\/\)\] {
+    background-image: url(/assets/);
+  }
+  .bg-\[url\(\/assets\/foto\)\] {
+    background-image: url(/assets/foto);
+  }
+  .bg-\[url\(\/assets\/fotoprincipal\)\] {
+    background-image: url(/assets/fotoprincipal);
+  }
+  .bg-\[url\(\/assets\/fotoprincipal\.jpeg\)\] {
+    background-image: url(/assets/fotoprincipal.jpeg);
+  }
+  .bg-\[url\(\/assets\/fotos-apt\/fotoprincipal\.jpeg\)\] {
+    background-image: url(/assets/fotos-apt/fotoprincipal.jpeg);
+  }
+  .bg-\[url\(\/assets\/piscina\)\] {
+    background-image: url(/assets/piscina);
+  }
+  .bg-\[url\(\/src\/assets\/fotos-apt\/Fotoprincipal\.jpeg\)\] {
+    background-image: url(/src/assets/fotos-apt/Fotoprincipal.jpeg);
+  }
+  .bg-\[url\(\/src\/assets\/fotos-apt\/fotoprincipal\.jpeg\)\] {
+    background-image: url(/src/assets/fotos-apt/fotoprincipal.jpeg);
+  }
+  .bg-\[url\(assets\/fotos-apt\/Fotoprincipal\.jpeg\)\] {
+    background-image: url(assets/fotos-apt/Fotoprincipal.jpeg);
+  }
+  .bg-\[url\(src\/assets\/fotos-apt\/fotoprincipal\.jpeg\)\] {
+    background-image: url(src/assets/fotos-apt/fotoprincipal.jpeg);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -525,6 +665,9 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .pt-\[120px\] {
+    padding-top: 120px;
   }
   .font-sans {
     font-family: var(--font-sans);
@@ -563,6 +706,10 @@
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-gray-800 {
     color: var(--color-gray-800);
